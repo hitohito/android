@@ -1,0 +1,95 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+
+    <!-- このLinearLayoutをRelativeLayoutに変更して同じレイアウトを実現してください -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="97dp"
+        android:background="#cccccc"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_marginRight="4dp"
+            android:gravity="right"
+            android:background="#ffffff"
+            android:src="@drawable/ic_launcher" />
+
+        <RelativeLayout
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ドロドロくん"
+                android:background="#ff9630" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="ドロドロくん"
+                android:background="#ffedc6" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ドロドロ君の画像ファイル"
+            android:layout_marginRight="80dp"
+            android:layout_marginEnd="21dp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/imageView"
+            android:layout_toStartOf="@+id/imageView"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="10dp"
+            android:text="hogehoe.png"
+            android:textColor="#808080"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="#cccccc"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:padding="4dp"
+        android:layout_marginTop="102dp"
+        >
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignRight="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginEnd="48dp"
+            android:layout_marginRight="10dp"
+            android:text="dsfas                                                                     12,516 bytes"
+            android:textColor="#808080"/>
+    </RelativeLayout>
+
+</FrameLayout>
